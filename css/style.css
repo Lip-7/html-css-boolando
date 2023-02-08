@@ -46,3 +46,68 @@ div.icons{
 .icons i{
     padding-left: 3px;
 }
+/* main */
+main{
+    margin-top: 60px;
+}
+main .single.product{
+    width: calc(100% / 3);
+    position: relative;
+}
+.img-wrap img{
+    width: 100%;
+}
+.product.infos h3{
+    text-transform: uppercase;
+}
+.price{
+    font-size: 0.9rem;
+}
+.new.price{
+    font-weight: 800;
+    color: red;
+}
+.old.price{
+    text-decoration: line-through;
+}
+.sale::after{
+    background-color: var(--red-sale);
+    padding: 3px 7px;
+    color: white;
+    font-size: 0.8rem;
+    font-weight: 800;
+    position:absolute;
+    left: 0;
+    bottom: 115px;
+}
+
+.fifty.sale::after{
+    content: "-50%";
+}
+
+.eco::before{
+    content: "Sostenibilità";
+    padding: 3px 7px;
+    color: white;
+    background-color: var(--green-t);
+    position: absolute;
+    left: 0px;
+    font-size: 0.8rem;
+    font-weight: 800;
+    bottom: 115px;
+}
+.p.eco::before{
+ margin-left: 53px;
+}
+
+.heart{
+    font-size: 2rem;
+    background-color: white;
+    padding: 5px;
+    position:absolute;
+    right: 0px;
+    top: 10px;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+}
