@@ -9,6 +9,7 @@
     --bg-header: #FF6900;
     --red-sale: #FF0000;
     --green-t: #008000;
+    --bd-footer: #1A1A1A;
 
 }
 /* utilities */
@@ -24,6 +25,7 @@
 }
 a{
     text-decoration: none;
+    color: white;
 }
 /* header */
 header{
@@ -110,4 +112,36 @@ main .single.product{
     width: 50px;
     height: 50px;
     text-align: center;
+}
+.hidden{
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+div.img-wrap:hover .hidden{
+    display: block;
+}
+
+/* footer */
+footer{
+    background-color: var(--bd-footer);
+    color: white;
+}
+footer h1{
+    font-size: 1.3rem;
+}
+footer ul{
+    list-style: none;
+}
+footer .container{
+    padding:20px 0px;
+}
+footer li{
+    padding: 5px;
+    font-size: 0.8rem;
+}
+footer i{
+    padding:5px;
+    font-size: 1.4rem
 }
