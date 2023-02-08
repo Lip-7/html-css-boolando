@@ -17,6 +17,9 @@
     max-width: 1400px;
     margin: 0 auto;
 }
+.flow{
+    flex-flow: row wrap;
+}
 .d-flex{
     display: flex;
 }
@@ -53,8 +56,9 @@ main{
     margin-top: 60px;
 }
 main .single.product{
-    width: calc(100% / 3);
+    width: calc((100% / 3) - 20px);
     position: relative;
+    margin: 20px 10px;
 }
 .img-wrap img{
     width: 100%;
@@ -85,6 +89,9 @@ main .single.product{
 
 .fifty.sale::after{
     content: "-50%";
+}
+.thirty.sale::after{
+    content: "-30%";
 }
 
 .eco::before{
@@ -123,10 +130,12 @@ div.img-wrap:hover .hidden{
     display: block;
 }
 
+
 /* footer */
 footer{
     background-color: var(--bd-footer);
     color: white;
+    margin-top: 50px;
 }
 footer h1{
     font-size: 1.3rem;
